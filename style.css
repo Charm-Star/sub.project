@@ -65,7 +65,7 @@
     transform: translateY(300px);
     float: left;
     color: aliceblue;
-    font-size: 100px;
+    font-size: 600%;
     margin-left: 0;
     left: 0;
 }
@@ -75,7 +75,7 @@
     position: absolute;
     float: left;
     color: aliceblue;
-    font-size: 100px;
+    font-size: 600%;
 }
 
 .waiting button {
@@ -91,10 +91,10 @@
 
 .world {
     position: absolute;
-    margin: 1500px 500px 0 0;
+    transform: translate(100px, 900%);
     float: right;
     color: aliceblue;
-    font-size: 100px;
+    font-size: 600%;
 
 
 }
@@ -105,7 +105,7 @@
     color: aliceblue;
 
     margin-left: 520px;
-    font-size: 100px;
+    font-size: 600%;
     display: inline;
     float: right;
     margin-top: 0;
@@ -170,9 +170,36 @@
 
 }
 
-.footer {
-    height: 30vh;
-    background-color: #000;
+
+
+.footervideo::after {
+    width: 100%;
+    position: absolute;
+
+}
+
+.footerTopinner {
+    position: absolute;
+    padding: 3%;
+    display: inline-block;
+    transform: translate(0, -650px);
+    color: antiquewhite;
+    text-align: center;
+}
+
+.footerTopinner p {
+    display: inline-block;
+    color: #1a1a1a;
+    margin-left: 50px;
+}
+
+.footerTopinner img {
+    display: inline-block;
+    transform: translate(100vh, 0);
+    width: 40px;
+    margin-left: 15px;
+
+
 }
 
 @keyframes drawPath1 {
@@ -189,4 +216,51 @@
     50% {
         transform: translate3d(0, 40px, 0);
     }
+}
+
+.resBox {
+    width: 100%;
+    height: 100%;
+    transform: translate(5%, 20%);
+    text-align: center;
+}
+
+.card-body {
+    background-color: #1a1a1a;
+    color: rgb(255, 255, 255);
+}
+
+.card {
+    display: inline-block;
+    margin: 0;
+    padding: 1px;
+
+}
+
+.inputRes {
+    width: 40%;
+    background-color: #1a1a1a;
+    height: 500px;
+    display: inline-block;
+    transform: translate(50%, -100%);
+}
+
+.inputRes h2 {
+    color: rgb(255, 255, 255);
+
+}
+
+.inputRes P {
+    color: rgb(255, 255, 255);
+
+}
+
+.inputRes button {
+    border-radius: 15px;
+    font-size: 40px;
+    margin-top: 15%;
+}
+
+.inputRes button:hover {
+    background-color: rgb(54, 54, 255);
 }
